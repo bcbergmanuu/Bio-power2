@@ -10,7 +10,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 16.51 0)
+			(at 20.32 10.16 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18,7 +18,7 @@
 			)
 		)
 		(property "Value" "LT3041ADE-PBF"
-			(at 0 13.97 0)
+			(at 12.7 7.62 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -26,7 +26,7 @@
 			)
 		)
 		(property "Footprint" "05-08-1708_ADI"
-			(at -1.27 6.35 0)
+			(at 0 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36,7 +36,7 @@
 			)
 		)
 		(property "Datasheet" "LT3041ADE-PBF"
-			(at 0 8.89 0)
+			(at 2.54 8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46,7 +46,7 @@
 			)
 		)
 		(property "Description" ""
-			(at -17.78 10.16 0)
+			(at 5.08 1.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -81,57 +81,9 @@
 			)
 		)
 		(symbol "LT3041ADE-PBF_0_1"
-			(polyline
-				(pts
-					(xy -10.16 -12.7) (xy 10.16 -12.7)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -10.16 12.7) (xy -10.16 -12.7)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 10.16 -12.7) (xy 10.16 12.7)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 10.16 12.7) (xy -10.16 12.7)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(pin input line
-				(at -17.78 10.16 0)
-				(length 7.62)
+				(at 5.08 1.27 0)
+				(length 3)
 				(name "IN"
 					(effects
 						(font
@@ -147,9 +99,9 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 3.81 -20.32 90)
-				(length 7.62)
+			(pin power_in line
+				(at 19.05 -25.4 90)
+				(length 3)
 				(name "GND"
 					(effects
 						(font
@@ -165,9 +117,9 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 0 -20.32 90)
-				(length 7.62)
+			(pin power_in line
+				(at 16.51 -25.4 90)
+				(length 3)
 				(name "GND"
 					(effects
 						(font
@@ -183,9 +135,9 @@
 					)
 				)
 			)
-			(pin output line
-				(at 17.78 2.54 180)
-				(length 7.62)
+			(pin input line
+				(at 27.94 -3.81 180)
+				(length 3)
 				(name "OUTS"
 					(effects
 						(font
@@ -201,9 +153,9 @@
 					)
 				)
 			)
-			(pin output line
-				(at 17.78 5.08 180)
-				(length 7.62)
+			(pin passive line
+				(at 27.94 -1.27 180)
+				(length 3)
 				(name "OUT"
 					(effects
 						(font
@@ -219,9 +171,9 @@
 					)
 				)
 			)
-			(pin output line
-				(at 17.78 7.62 180)
-				(length 7.62)
+			(pin power_out line
+				(at 27.94 1.27 180)
+				(length 3)
 				(name "OUT"
 					(effects
 						(font
@@ -237,9 +189,9 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at -3.81 -20.32 90)
-				(length 7.62)
+			(pin power_in line
+				(at 13.97 -25.4 90)
+				(length 3)
 				(name "GND"
 					(effects
 						(font
@@ -256,8 +208,8 @@
 				)
 			)
 			(pin input line
-				(at -17.78 7.62 0)
-				(length 7.62)
+				(at 5.08 -1.27 0)
+				(length 3)
 				(name "IN"
 					(effects
 						(font
@@ -274,8 +226,8 @@
 				)
 			)
 			(pin input line
-				(at -17.78 5.08 0)
-				(length 7.62)
+				(at 5.08 -3.81 0)
+				(length 3)
 				(name "IN"
 					(effects
 						(font
@@ -292,8 +244,8 @@
 				)
 			)
 			(pin power_in line
-				(at -17.78 2.54 0)
-				(length 7.62)
+				(at 5.08 -13.97 0)
+				(length 3)
 				(name "VIOC"
 					(effects
 						(font
@@ -310,8 +262,8 @@
 				)
 			)
 			(pin input line
-				(at -17.78 0 0)
-				(length 7.62)
+				(at 5.08 -10.16 0)
+				(length 3)
 				(name "EN/UV"
 					(effects
 						(font
@@ -328,8 +280,8 @@
 				)
 			)
 			(pin passive line
-				(at -17.78 -2.54 0)
-				(length 7.62)
+				(at 5.08 -16.51 0)
+				(length 3)
 				(name "PG"
 					(effects
 						(font
@@ -346,8 +298,8 @@
 				)
 			)
 			(pin passive line
-				(at -17.78 -5.08 0)
-				(length 7.62)
+				(at 5.08 -19.05 0)
+				(length 3)
 				(name "ILIM"
 					(effects
 						(font
@@ -363,9 +315,9 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 17.78 -2.54 180)
-				(length 7.62)
+			(pin input line
+				(at 27.94 -11.43 180)
+				(length 3)
 				(name "PGFB"
 					(effects
 						(font
@@ -381,9 +333,9 @@
 					)
 				)
 			)
-			(pin input line
-				(at 17.78 -5.08 180)
-				(length 7.62)
+			(pin passive line
+				(at 27.94 -19.05 180)
+				(length 3)
 				(name "SET"
 					(effects
 						(font
@@ -397,6 +349,20 @@
 							(size 1.27 1.27)
 						)
 					)
+				)
+			)
+		)
+		(symbol "LT3041ADE-PBF_1_1"
+			(rectangle
+				(start 7.62 3.81)
+				(end 25.4 -22.86)
+				(stroke
+					(width 0.3)
+					(type default)
+					(color 72 0 0 1)
+				)
+				(fill
+					(type background)
 				)
 			)
 		)

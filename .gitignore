@@ -1,4 +1,7 @@
 bio-power-2-backups/
+production/
 fp-info-cache
 fp-lib-table
-
+fabrication-toolkit-options.json
+_autosave-bio-power-2.kicad_pcb
+*.lck
