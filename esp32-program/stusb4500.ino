@@ -49,7 +49,7 @@ void setup()
   delay(100);
 
   /* Set Number of Power Data Objects (PDO) 1-3 */
-//  usb.setPdoNumber(3);
+  usb.setPdoNumber(3);
 
   /* PDO1
    - Voltage fixed at 5V
@@ -57,8 +57,8 @@ void setup()
    - Under Voltage Lock Out (setUnderVoltageLimit) fixed at 3.3V
    - Over Voltage Lock Out (setUpperVoltageLimit) 5-20%
   */
-  //usb.setCurrent(1,0.5);
-  //usb.setUpperVoltageLimit(1,20);
+  usb.setLowerVoltageLimit(1,5);
+  usb.setUpperVoltageLimit(1,20);
   usb.setVoltage(1,5);
   usb.setCurrent(1,1);
   /* PDO2
@@ -67,10 +67,10 @@ void setup()
    - Under Voltage Lock Out (setUnderVoltageLimit) 5-20%
    - Over Voltage Lock Out (setUpperVoltageLimit) 5-20%
   */
-  usb.setVoltage(2,9.0);
+  usb.setVoltage(2,9);
   usb.setCurrent(2,1);
-//  usb.setLowerVoltageLimit(2,20);
-//  usb.setUpperVoltageLimit(2,20);
+  usb.setLowerVoltageLimit(2,5);
+  usb.setUpperVoltageLimit(2,20);
 
   /* PDO3
    - Voltage 5-20V
@@ -78,10 +78,13 @@ void setup()
    - Under Voltage Lock Out (setUnderVoltageLimit) 5-20%
    - Over Voltage Lock Out (setUpperVoltageLimit) 5-20%
   */
-  usb.setVoltage(3,6.6);
+  usb.setVoltage(3,7);
   usb.setCurrent(3,1);
-//  usb.setLowerVoltageLimit(3,20);
-//  usb.setUpperVoltageLimit(3,20);
+  usb.setLowerVoltageLimit(3,5);
+  usb.setUpperVoltageLimit(3,20);
+  //usb.setCurrent(3,1);
+  //usb.setLowerVoltageLimit(3,6);
+  //usb.setUpperVoltageLimit(3,15);
 
   /* Flexible current value common to all PDOs */
 //  usb.setFlexCurrent(1.0);
